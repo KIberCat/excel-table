@@ -3,7 +3,8 @@ import {
   CHANGE_STYLES,
   TABLE_RESIZE,
   APPLY_STYLE,
-  CHANGE_TITLE
+  CHANGE_TITLE,
+  UPDATE_DATE
 } from './types'
 
 export function tableResize(data) {
@@ -24,6 +25,12 @@ export function changeStyles(data) {
   return {
     type: CHANGE_STYLES,
     data
+  }
+}
+
+export function updateDate() {
+  return {
+    type: UPDATE_DATE
   }
 }
 
